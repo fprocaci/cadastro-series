@@ -8,7 +8,7 @@ namespace CadastroSeries
         private string Descricao {get; set;}
         private int Ano {get; set;}
     
-        public Serie (int id, Genero genero, string titulo, string descricao, int ano)
+        public Series (int id, Genero genero, string titulo, string descricao, int ano)
         {
             this.Id = id;
             this.Genero = genero;
