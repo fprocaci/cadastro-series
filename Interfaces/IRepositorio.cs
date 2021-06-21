@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CadastroSeries.interfaces
+namespace CadastroSeries.Interfaces
 {
     public interface IRepositorio<T>
     {
