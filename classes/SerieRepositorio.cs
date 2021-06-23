@@ -7,34 +7,34 @@ namespace CadastroSeries.classes
     public class SerieRepositorio : IRepositorio<Series>
     {
         private List<Series> ListaSerie = new List<Series>();
-        public void Atualiza(int id, Series entidade)
+        public void Atualiza(int id, Series objeto)
         {
-            throw new NotImplementedException();
+            ListaSerie[id] = objeto;
         }
 
         public void Exclui(int id)
         {
-            throw new NotImplementedException();
+            ListaSerie[id].Excluir();
         }
 
-        public void Insere(Series entidade)
+        public void Insere(Series objeto)
         {
-            throw new NotImplementedException();
+            ListaSerie.Add(objeto);
         }
 
         public List<Series> Lista()
         {
-            throw new NotImplementedException();
+            return ListaSerie;
         }
 
         public int ProximoId()
         {
-            throw new NotImplementedException();
+            return ListaSerie.Count;
         }
 
         public Series RetornaPorId(int id)
         {
-            throw new NotImplementedException();
+            return ListaSerie[id];
         }
     }
 }
